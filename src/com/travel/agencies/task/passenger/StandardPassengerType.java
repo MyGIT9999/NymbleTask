@@ -1,7 +1,5 @@
 package com.travel.agencies.task.passenger;
 
-import com.travel.agencies.task.passenger.PassengerType;
-
 public class StandardPassengerType  {
 
     public static boolean canSignUpForActivity(double balance, double cost) {

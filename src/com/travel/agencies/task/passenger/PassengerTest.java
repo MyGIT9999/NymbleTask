@@ -23,14 +23,14 @@ public class PassengerTest {
 
     @Test
     void testSignUpForActivityInsufficientFunds() {
-        ActivityImp snorkeling = new ActivityImp("Wallyball", "Kings always wins", 50, 10);
+        ActivityImp Wallyball = new ActivityImp("Wallyball", "Kings always wins", 50, 10);
         Destination beach = new Destination("Beach Paradise");
-        beach.addActivity(snorkeling);
+        beach.addActivity(Wallyball);
 
         Passenger alice = new Passenger("Parth", 101, 30, PassengerTypeEnum.STANDARD);
 
         // Test passenger sign up for activity with insufficient funds
-        boolean signUpResult = alice.signUpForActivity(snorkeling);
+        boolean signUpResult = alice.signUpForActivity(Wallyball);
 
         assertFalse(signUpResult);
         assertEquals(0, alice.getActivitiesEnrolled().size());

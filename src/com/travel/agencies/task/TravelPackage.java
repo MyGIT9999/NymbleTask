@@ -13,6 +13,22 @@ public class TravelPackage {
     private List<Destination> itinerary = new ArrayList<>();
     private List<Passenger> passengersEnrolled = new ArrayList<>();
 
+    public String getName() {
+        return name;
+    }
+
+    public int getPassengerCapacity() {
+        return passengerCapacity;
+    }
+
+    public List<Destination> getItinerary() {
+        return itinerary;
+    }
+
+    public List<Passenger> getPassengersEnrolled() {
+        return passengersEnrolled;
+    }
+
     public TravelPackage(String name, int passengerCapacity) {
         this.name = name;
         this.passengerCapacity = passengerCapacity;

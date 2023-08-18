@@ -12,8 +12,8 @@ public class Main {
         Destination mountain = new Destination("Mountain Retreat");
 
         ActivityImp snorkeling = new ActivityImp("Snorkeling", "Explore underwater life", 50, 10);
-        ActivityImp sunbathing = new ActivityImp("Sunbathing", "Relax on the beach", 20, 20);
-        ActivityImp hiking = new ActivityImp("Hiking", "Discover scenic trails", 30, 15);
+        ActivityImp sunbathing = new ActivityImp("Table tennise", "Relax on the beach", 20, 20);
+        ActivityImp hiking = new ActivityImp("Wallyball", "Kings always wins", 30, 15);
 
         beach.addActivity(snorkeling);
         beach.addActivity(sunbathing);
@@ -23,9 +23,9 @@ public class Main {
         summerGetaway.addDestination(beach);
         summerGetaway.addDestination(mountain);
 
-        Passenger alice = new Passenger("Alice", 101, 100, PassengerTypeEnum.STANDARD);
-        Passenger bob = new Passenger("Bob", 102, 200, PassengerTypeEnum.GOLD);
-        Passenger charlie = new Passenger("Charlie", 103, 0, PassengerTypeEnum.PREMIUM);
+        Passenger alice = new Passenger("Jay", 101, 100, PassengerTypeEnum.STANDARD);
+        Passenger bob = new Passenger("Parth", 102, 200, PassengerTypeEnum.GOLD);
+        Passenger charlie = new Passenger("Meet", 103, 0, PassengerTypeEnum.PREMIUM);
 
         summerGetaway.addPassenger(alice);
         summerGetaway.addPassenger(bob);
