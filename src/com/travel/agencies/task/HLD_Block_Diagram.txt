@@ -1,0 +1,41 @@
++------------------------------------+
+|         Travel Package System       |
++------------------------------------+
+|              Main Class             |
+|                                    |
+| + main()                            |
+|                                    |
++-------------+---------------+-------+
+              |               |
+              v               v
++----------------+    +----------------+
+|    Travel      |    |    Passenger   |
+|   Package      |    |                |
+|    Manager     |    |                |
+|                |    |                |
+| + createPackage|    | + signUpForAct |
+| + enrollPasseng|    | + getEnrolledAc|
+| + printItinerary|    | + getBalance()|
+| + printPasseng |    |                |
+|   erList()     |    +----------------+
++----------------+           ^
+              |               |
+              v               v
++----------------+    +----------------+
+|    Destination |    |    Activity    |
+|                |    |                |
+| - name: String |    | - name: String |
+| - activities:  |    | - description: |
+|   List<IActivity>|    |   String     |
++----------------+    | - cost: double |
+              |       | - capacity: int|
+              v       +----------------+
++----------------+       
+|   Passenger    |       
+|    Manager     |       
+|                |       
+| + createPasseng|       
+| + getPassenger |       
+|   (int):        |       
+|   Passenger    |       
++----------------+       
