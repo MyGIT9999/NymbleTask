@@ -1,0 +1,125 @@
++-------------------------+          +----------------------+
+|        IActivity        |<---------|     Activity         |
++-------------------------+          +----------------------+
+| + getName(): String     |          | - name: String       |
+| + getDescription():     |          | - description: String|
+|   String                |          | - cost: double       |
+| + getCost(): double     |          | - capacity: int      |
+| + getCapacity(): int    |          | + Constructor()      |
++-------------------------+          +----------------------+
+           ^             ^
+            \            |
+             \           |
+              \          |
+               \         |
+                \        |
+                 \       |
+                  \      |
+                   \     |
+                    \    |
+                     \   |
+                      \  |
+                       \ |
++-------------------------+          +----------------------+
+|        IPassenger       |<---------|     Passenger        |
++-------------------------+          +----------------------+
+| + getName(): String     |          | - name: String       |
+| + getNumber(): int      |          | - number: int        |
+| + getBalance(): double  |          | - balance: double    |
+| + getEnrolledActivities |          | - passengerType:     |
+|   (): List<IActivity>   |          |   PassengerType      |
+| + signUpForActivity(    |          | - enrolledActivities:|
+|   IActivity): boolean   |          |   List<IActivity>    |
++-------------------------+          | + Constructor()      |
+           ^             ^            | + signUpForActivity()|
+            \            |            | + getBalance()       |
+             \           |            +----------------------+
+              \          |
+               \         |
+                \        |
+                 \       |
+                  \      |
+                   \     |
+                    \    |
+                     \   |
+                      \  |
+                       \ |
++-------------------------+          +----------------------+
+|       IActivity         |<---------|   Destination        |
++-------------------------+          +----------------------+
+| + getName(): String     |          | - name: String       |
+| + getDescription():     |          | - activities:         |
+|   String                |            List<IActivity>     |
+| + getCost(): double     |          | + addActivity()      |
+| + getCapacity(): int    |          +----------------------+
++-------------------------+
+           ^
+            \
+             \
+              \
+               \
+                \
+                 \
+                  \
+                   \
+                    \
+                     \
+                      \
+                       \
+                        \
+                         \
+                          \
+                           \
+                            \
+                             \
+                              \
+                               \
++-------------------------+  \         +----------------------+
+|      IPassenger         |---\------>|   TravelPackage      |
++-------------------------+  /         +----------------------+
+| + getName(): String     |  /         | - name: String       |
+| + getNumber(): int      | /          | - passengerCapacity: |
+| + getBalance(): double  |/            |   int                |
+| + getEnrolledActivities |/          | - itinerary:          |
+|   (): List<IActivity>   |            |   List<Destination>  |
+| + signUpForActivity(    |          | - passengersEnrolled: |
+|   IActivity): boolean   |            |   List<Passenger>    |
++-------------------------+            +----------------------+
+           ^                            | + addDestination()   |
+            \                           | + addPassenger()     |
+             \                          | + printItinerary()   |
+              \                         | + printPassengerList()|
+               \                        +----------------------+
+                \
+                 \
+                  \
+                   \
+                    \
+                     \         
+                      \
+                       \
+                        \
+                         \
++-------------------------+     
+|  TravelPackageManager   |------\
++-------------------------+       \
+| - packages:             |        \
+|   List<TravelPackage>   |         \
++-------------------------+          \
+| + createPackage()       |           \
+| + enrollPassenger()     |            \
+| + printItinerary()      |             \
+| + printPassengerList()  |              \
++-------------------------+               \
+                                           \
+                                            \
+                                             \
+                                              \
+                                               \
+                                                                           
+                                                                                                                                
+                                                 +----------------------+
+                                                 |      Main            |
+                                                 +----------------------+
+                                                 | + main()             |
+                                                 +----------------------+
